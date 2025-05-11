@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Aladex</title>
+  </head>
+  <body>
+    <div>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="aladex.png" alt="" srcset="" style="height: 3rem"
+          /></a>
+        </div>
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="#">Services</a>
+            <ul class="dropdown">
+              <li><a href="index2.html">Buy a Home</a></li>
+              <li>
+                <a href="index3.html">Sell a Home</a>
+              </li>
+              <li><a href="index4.html">Investments</a></li>
+              <li><a href="index5.html">Global listings</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery">Gallery</a>
+            <ul class="dropdown">
+              <li><a href="#gallery">Living Room</a></li>
+              <li><a href="#gallery">Dining Room</a></li>
+              <li><a href="#gallery">Bedroom</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="index6.html">Our Agents</a>
+            <ul class="dropdown">
+              <li><a href="index6.html">Profile</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="index6.html#Location">Address</a>
+          </li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+      </nav>
+    </div>
+    <div class="background-container">
+      <!-- Hero Section -->
+      <div>
+        <header class="hero">
+          <h1 style="font-family: Arial, Helvetica, sans-serif">
+            Welcome to Aladex Realty
+          </h1>
+          <p>Your Dream Home,Our Commitment</p>
+          <button onclick="showAlert()">Get Started</button>
+        </header>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="card">
+          <img src="Buy a home.jpg" alt="" srcset="" />
+          <h3>Buy a Home</h3>
+          <p>Discover your dream home with us.</p>
+        </div>
+        <div class="card">
+          <img src="Sell a home.jpg" alt="" />
+          <h3>Sell a Home</h3>
+          <p>Get the best value for your property.</p>
+        </div>
+        <div class="card">
+          <img src="investment.jpg" alt="" />
+          <h3>Investments</h3>
+          <p>Explore lucrative real estate investments.</p>
+        </div>
+        <div class="card">
+          <img src="Global.jpg" alt="" />
+          <h3>Global Listings</h3>
+          <p>Access properties worldwide.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+      <h2>Our Gallery</h2>
+      <div class="gallery-images">
+        <img src="living room.jpg" alt="Living Room" />
+        <img src="dining.jpg" alt="Dining Room" />
+        <!-- <p>Dining Room</p> -->
+        <img src="bedroom.jpg" alt="Bedroom" />
+        <!-- <p>Bedroom</p> -->
+      </div>
+    </section>
+
+    <!-- testimonials -->
+    <section class="test">
+      <h2 style="text-align: center; padding-top: 2rem">Testimonials</h2>
+      <p style="text-align: center; padding: 1rem 4rem 1rem 4rem">
+        We work with our clients as one family and take their needs seriously,
+        read what our clients are saying
+      </p>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h5 style="text-align: center; margin: 0.1rem">
+              Mrs. Jegede – 204 Smith Street Newark
+            </h5>
+            <p style="text-align: center; padding: 2rem 4rem 4rem 4rem">
+              I was planning to move to a house in a short period of time but
+              don’t know how, until I met Mr Ajayi of Aladex Realty …. wow! What
+              a great agent to deal with. Mr Ajayi was well versed in the areas
+              and the type of homes for sale and no matter the time of night, I
+              had a question, he would always respond promptly. In one and a
+              half months he found me the perfect home with kind of features I
+              wanted. I was very fortunate to have Mr. Ajayi. We closed the
+              house in less time expected…. thanks to Mr. Ajayi and the team of
+              Aladex realtors.
+            </p>
+          </div>
+          <div class="carousel-item">
+            <h5 style="text-align: center; margin: 0.1rem">
+              Dr. Ibironke. 10 Ralston Avenue Piscataway NJ
+            </h5>
+            <p style="text-align: center; padding: 2rem 4rem 4rem 4rem">
+              Mr. Ajayi is a Realtor who cares about his relationship with
+              others. When he worked with us over ten years ago, he always asked
+              us for feedback on every property we scouted, a courtesy he
+              afforded to the other realtors. By so doing, he was able to
+              discern, or should I say, discover our unspoken preferences and
+              led us to the house that matched our needs. I found him to be
+              knowledgeable and attentive. As a trained Economist with higher
+              degrees, his sense of property value is precise. He is very
+              professional, and his demeanor is respectful. All I have to say
+              about him is very positive. I have high regard for him as a person
+              and for his work as Realtor.
+            </p>
+          </div>
+          <div class="carousel-item">
+            <h5 style="text-align: center; margin: 0.1rem">
+              Mr. Omomo Timothy. 200 Kerrigan Blvd Newark NJ
+            </h5>
+            <p style="text-align: center; padding: 2rem 4rem 4rem 4rem">
+              I have been looking to buy a house, but don’t know the benefits of
+              owning and the process of involved. I was referred to Mr. Ajayi
+              through a friend. I can not say enough by Mr. Ajayi wealth of
+              knowledge in real estate transactions. Knowing that I am a first
+              time home, he took his time to work me through the process and
+              always ready to answer questions. I’m indeed very grateful and
+              would recommend Mr. Ajayi anytime. I closed my house within a
+              month.
+            </p>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Agent Section -->
+    <section id="agent" class="agent">
+      <h2 style="margin-top: 1rem">Meet the Founder</h2>
+      <img src="niyi.jpg" alt="Ayodele Ajayi" class="agent-photo" />
+      <h3>AYODELE AJAYI, MPA, PSA, SFR</h3>
+      <p>
+        Mr. Ayodele Ajayi began his real estate career since 2004. Mr. Ajayi
+        started with Exit realty Lucky and later joined Exit Here For. In 2012,
+        Mr. Ajayi became broker of record for Neighborhood Assistance
+        Corporation of America (NACA) Real estate department New Jersey office.
+        Mr. Ajayi left NACA to establish his own Real Estate Brokerage Firm
+        Aladex Realty in 2014. Mr. Ajayi had a Bachelor of Science degree in
+        Economics, from Obafemi Awolowo University in Nigeria and A Master
+        degree in Public Administration from Rutgers, The State University of
+        New Jersey, USA
+      </p>
+      <button onclick="bookAppointment()">Book Appointment</button>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <img src="equal.jpg" alt="" style="height: 3rem" />
+      <p>&copy; 2025 Aladex Realty. All rights reserved.</p>
+      <p>
+        Address: 934 Stuyvesant Avenue Ste 12A Union, NJ 07083 (908-686-8565)
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
