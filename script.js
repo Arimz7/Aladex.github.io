@@ -2,9 +2,9 @@ function showAlert() {
   alert("Welcome to Aladex Realty! Let's find your dream home.");
 }
 
-function bookAppointment() {
-  alert("Appointment booked with Ayodele Ajayi.");
-}
+// function bookAppointment() {
+//   alert("Appointment booked with Ayodele Ajayi.");
+// }
 
 function toggleMenu() {
   const navLinks = document.querySelector(".nav-links");
